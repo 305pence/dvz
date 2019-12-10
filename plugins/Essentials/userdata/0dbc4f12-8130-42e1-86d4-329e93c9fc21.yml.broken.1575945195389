@@ -1,0 +1,23 @@
+lastAccountName: 30Spence
+timestamps:
+  login: 1575941684894
+  lastteleport: 1574567412171
+  logout: 1575943511616
+ipAddress: 192.168.0.14
+lastlocation:
+  world: world
+  x: -8387.5
+  y: 69.0
+  z: -4569.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: world
+  x: 161.66141925751182
+  y: 79.02347215540331
+  z: 405.78018681004585
+  yaw: 148.50293
+  pitch: 32.340218
+afk: false
+unlimited:
+- !!org.bukkit.Material 'OAK_WOOD'

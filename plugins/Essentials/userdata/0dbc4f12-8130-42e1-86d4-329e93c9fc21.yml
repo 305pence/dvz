@@ -1,22 +1,4 @@
 lastAccountName: 30Spence
 timestamps:
-  login: 1574731565715
-  lastteleport: 1574567412171
-  logout: 1574738245979
-ipAddress: 192.168.0.24
-lastlocation:
-  world: world
-  x: -8387.5
-  y: 69.0
-  z: -4569.5
-  yaw: 0.0
-  pitch: 0.0
-nickname: ham_omelette420
-logoutlocation:
-  world: world
-  x: -8533.74406540015
-  y: 84.0625
-  z: -4580.329131433092
-  yaw: 178.78345
-  pitch: 11.23992
-afk: false
+  login: 1575949979665
+ipAddress: 192.168.0.14
