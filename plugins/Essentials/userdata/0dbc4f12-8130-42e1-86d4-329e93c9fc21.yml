@@ -1,4 +1,28 @@
 lastAccountName: 30Spence
 timestamps:
-  login: 1575949979665
-ipAddress: 192.168.0.14
+  login: 1576470837255
+  logout: 1576474657319
+  kits:
+    blacksmith: 1576474622217
+    alchemist: 1576474637372
+    test: 1576036610086
+    tailor: 1576474631388
+    baker: 1576474645616
+    lumberjack: 1576474653599
+  lastteleport: 1576474652616
+ipAddress: 192.168.0.11
+logoutlocation:
+  world: world
+  x: 425.2061446802972
+  y: 80.0
+  z: -817.7042175960756
+  yaw: -57.878963
+  pitch: 43.87588
+afk: false
+lastlocation:
+  world: world
+  x: 417.0029228895999
+  y: 79.0
+  z: -816.3250316611943
+  yaw: -130.20627
+  pitch: 17.623468
