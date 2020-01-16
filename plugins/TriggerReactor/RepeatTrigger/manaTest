@@ -1,0 +1,3 @@
+IF mana == "repeat"
+    #MESSAGE "it worked lol"
+ENDIF

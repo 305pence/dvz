@@ -1,0 +1,5 @@
+IF {"t"} == 30
+ #CALL "MobRelease"
+ELSE
+ {"t"} = {"t"} + 1
+ENDIF

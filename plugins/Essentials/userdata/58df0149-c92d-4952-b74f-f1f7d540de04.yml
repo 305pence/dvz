@@ -1,0 +1,27 @@
+lastAccountName: Koragus
+timestamps:
+  login: 1579141137851
+  lastteleport: 1579139719709
+  kits:
+    blacksmith: 1577917470307
+    alchemist: 1579047322838
+    tailor: 1577130169570
+    baker: 1579133508554
+    lumberjack: 1576973715191
+  logout: 1579141099268
+ipAddress: 70.176.170.26
+lastlocation:
+  world: world
+  x: -662.5
+  y: 82.0000002
+  z: -487.5
+  yaw: 14.88278
+  pitch: -2.0722866
+logoutlocation:
+  world: world
+  x: -666.715392219813
+  y: 174.0
+  z: -707.78836779709
+  yaw: 15.930176
+  pitch: 31.787703
+afk: false

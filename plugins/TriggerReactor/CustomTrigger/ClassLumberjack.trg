@@ -4,8 +4,9 @@ IF event.getAction() != Action.LEFT_CLICK_AIR && event.getAction() != Action.LEF
     #STOP
 ENDIF
 IF $idname:$helditem == "MUSIC_DISC_WARD"
-    #CMDOP "clearinventory"
-    #CMDOP "warp dwarf"
-    #CMDOP "luckperms user $playername parent set lumberjack"
-    #CMDOP "kit lumberjack"
+    #CMDCON "clearinventory $playername"
+    #CMDCON "warp dwarf $playername"
+    #CMDCON "luckperms user $playername parent set lumberjack"
+    #CMDCON "kit lumberjack $playername"
+    #SCOREBOARD "TEAM" "dwarves" "ADD" $playername
 ENDIF
