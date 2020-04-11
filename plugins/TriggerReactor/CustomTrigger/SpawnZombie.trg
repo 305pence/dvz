@@ -1,12 +1,14 @@
 IMPORT org.bukkit.event.block.Action
 
 IF event.getAction() != Action.LEFT_CLICK_AIR && event.getAction() != Action.LEFT_CLICK_BLOCK
-    #STOP
+ #STOP
 ENDIF
+
 IF $idname:$helditem == "ZOMBIE_SPAWN_EGG" && $haspermission:"dead" && {"MobRelease"}
     #CMDCON "clearinventory $playername"
-    #CMDCON "warp monster $playername"
+    #TP {"location.mobspawn"}
     #CMDCON "luckperms user $playername parent set zombie"
     #CMDCON "kit zombie $playername"
-    #POTION "NIGHT_VISION" 200000 1
+    #CALL "MobEffect"
+    #GIVE item("WOODEN_HOE", 1)
 ENDIF

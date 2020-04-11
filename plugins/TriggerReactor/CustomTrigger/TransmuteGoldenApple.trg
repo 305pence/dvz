@@ -23,7 +23,7 @@ IF event.getClickedBlock().getBlockData().getMaterial().name() == "CAULDRON" && 
     player.setLevel($explevel - 5)
     data.setLevel(data.getLevel() - 1)
     block.setBlockData(data)
-    #DROPITEM item("ENCHANTED_GOLDEN_APPLE", 1), player.getLocation()
+    #DROPITEM item("GOLDEN_APPLE", 2), player.getLocation()
    ELSE
     #MESSAGE "&61 Redstone &3is required to make a golden apple"
    ENDIF

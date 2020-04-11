@@ -1,4 +1,61 @@
 mana: repeat
 C: -1
 t: 0
-MobRelease: true
+MobRelease: false
+location:
+  shrine:
+    ==: org.bukkit.Location
+    world: world
+    x: 10197.155320125215
+    y: 74.0
+    z: 9954.234198780068
+    pitch: 26.685156
+    yaw: -136.5581
+  mobspawn:
+    ==: org.bukkit.Location
+    world: world
+    x: -77.02879715744429
+    y: 99.60727228775397
+    z: 64.37547358619281
+    pitch: 35.262936
+    yaw: -57.89862
+  lobby:
+    ==: org.bukkit.Location
+    world: world
+    x: 10160.70103524909
+    y: 77.36938855736308
+    z: 9962.226844062983
+    pitch: 26.295542
+    yaw: -151.41222
+  quarry:
+    ==: org.bukkit.Location
+    world: world
+    x: -259.1278743705562
+    y: 88.0
+    z: -291.4181345883783
+    pitch: 15.4322405
+    yaw: 324.11243
+scoreboard:
+  dwarves: 0
+UUID:
+  player:
+    0dbc4f12-8130-42e1-86d4-329e93c9fc21: bf4f9847-97a7-497e-ac06-594a7ff0e2db
+    58df0149-c92d-4952-b74f-f1f7d540de04: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
+    87321ea3-29a8-43cb-ac2d-b19160cc5604: 'off'
+    8c9a6926-cc2f-4fe3-9d2a-961816e3bfd6: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
+    cbc38958-5331-4b20-9063-e99f124e160e: 0e3e6a24-a047-4a2f-9599-ed8edb7cd0e7
+  game: bf4f9847-97a7-497e-ac06-594a7ff0e2db
+dragon:
+  phase: DEAD
+  cooldown: 0
+  bote: cda029c5-7d92-484b-b15b-dbd077cb739b
+  dragon: 9b6c579c-9be4-40fa-8ad2-4a7ab258b7ab
+  pickupHealth: 230
+  pickupPlayer: NONE
+  held: NONE
+shrineHealth: 0
+test: 4
+sickness:
+  0dbc4f12-8130-42e1-86d4-329e93c9fc21: 0
+lives:
+  zombievillager: 0

@@ -1,0 +1,7 @@
+FOR player = getPlayers()
+IF $haspermission:"dwarf" && player.getLocation().getDistanceSquared({"location.shrine"}) > 4096
+c = 1
+ENDIF
+
+
+ENDFOR

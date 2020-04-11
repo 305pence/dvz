@@ -1,0 +1,4 @@
+FOR player = getPlayers()
+ IF $haspermission:"dwarf" && !($haseffect:"NIGHT_VISION")
+ ENDIF
+ENDFOR

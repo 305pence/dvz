@@ -17,14 +17,15 @@ IF $explevel >= 10
  IF takeItem(player, item, 3)
   player.setLevel($explevel - 10)
   pu = player.getLocation()
-  #DROPITEM item("BONE", $random:3:9), pu
+  #DROPITEM item("BONE", $random:6:12), pu
+  #DROPITEM item("LAPIS_LAZULI", $random:3:9), pu
   #DROPITEM item("MILK_BUCKET", 1), pu
   #DROPITEM item("SAND", 9), pu
   FOR i = 0:3
    r = $random:1:101
-   IF r <= 50
+   IF r <= 55
     #CMDCON "give $playername potionofhealing 1"
-   ELSEIF r <= 70
+   ELSEIF r <= 75
     #CMDCON "give $playername potionofspeed 1"
    ELSEIF r <= 90
     #CMDCON "give $playername potionofstrength 1"
@@ -32,6 +33,7 @@ IF $explevel >= 10
     #CMDCON "give $playername potionoffireres 1"
    ENDIF
   ENDFOR
+  #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Gold" $getscore:"DvZ":"Gold" + $random:4:10
  ELSE
   #MESSAGE "&63 Mundane Potions &3are required to transmute."
  ENDIF

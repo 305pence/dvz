@@ -34,9 +34,9 @@ IF event.getClickedBlock().getBlockData().getMaterial().name() == "YELLOW_CONCRE
    IF $random:1:4 == 3
     gold = event.getClickedBlock().getLocation()
     #SETBLOCK "GOLD_BLOCK", gold
-    #SOUND player.getLocation(), "BLOCK_ANVIL_LAND", 0.5, 0.5
+    #SOUNDALL player.getLocation(), "BLOCK_ANVIL_LAND", 0.5, 0.5
    ELSE
-    #SOUND player.getLocation(), "BLOCK_ANVIL_LAND", 0.5, 0.5
+    #SOUNDALL player.getLocation(), "BLOCK_ANVIL_LAND", 0.5, 0.5
    ENDIF
   ELSE
    #MESSAGE "&3Not enough mana."

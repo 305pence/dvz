@@ -1,4 +1,3 @@
-FOR player = getPlayers()
  #GIVE item("MUSIC_DISC_WARD", 1)
  #MESSAGE "&3(Ward is lumberjack)"
  IF $random:4 == 2
@@ -18,4 +17,3 @@ FOR player = getPlayers()
   #MESSAGE "&3(Wait is alchemist)"
  ENDIF
  #MESSAGE "&3Left click a disc to select a class"
-ENDFOR

@@ -34,7 +34,6 @@ IF $lore:($helditem) == "Extract Oil" && $haspermission:"lumberjack"
     #SETBLOCK "BLUE_TERRACOTTA", x, y, z
    ELSE
     #MESSAGE "&3Not enough space to place the oil"
-    #MESSAGE $blockname:"world":x:y:z
     #DROPITEM item, player.getLocation()
    ENDIF
   ELSE

@@ -1,2 +1,2 @@
-Sync: false
+Sync: true
 Event: org.bukkit.event.player.PlayerRespawnEvent

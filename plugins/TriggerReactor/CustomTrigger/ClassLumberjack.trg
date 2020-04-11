@@ -4,9 +4,15 @@ IF event.getAction() != Action.LEFT_CLICK_AIR && event.getAction() != Action.LEF
     #STOP
 ENDIF
 IF $idname:$helditem == "MUSIC_DISC_WARD"
+    #SETGAMEMODE 0
     #CMDCON "clearinventory $playername"
-    #CMDCON "warp dwarf $playername"
+    #TP {"location.shrine"}
     #CMDCON "luckperms user $playername parent set lumberjack"
     #CMDCON "kit lumberjack $playername"
     #SCOREBOARD "TEAM" "dwarves" "ADD" $playername
+    #SCOREBOARD "OBJ" "dragonDamage:dummy" "SET" $playername 0
+    #SCOREBOARD "OBJ" "witherDamage:dummy" "SET" $playername 0
+    ASYNC
+     #CALL "dwarfCounter"
+    ENDASYNC
 ENDIF
