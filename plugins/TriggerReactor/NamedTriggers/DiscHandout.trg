@@ -1,19 +1,24 @@
- #GIVE item("MUSIC_DISC_WARD", 1)
- #MESSAGE "&3(Ward is lumberjack)"
+ i = item("MUSIC_DISC_WARD", 1)
+ #SETITEMNAME "&2&lLumberjack", i
+ #GIVE i
  IF $random:4 == 2
-  #GIVE item("MUSIC_DISC_BLOCKS", 1)
-  #MESSAGE "&3(Blocks is blacksmith)"
+  i = item("MUSIC_DISC_BLOCKS", 1)
+  #SETITEMNAME "&c&lBlacksmith", i
+  #GIVE i
  ENDIF
  IF $random:4 == 2
-  #GIVE item("MUSIC_DISC_STRAD", 1)
-  #MESSAGE "&3(Strad is tailor)"
+  i = item("MUSIC_DISC_STRAD", 1)
+  #SETITEMNAME "&f&lTailor", i
+  #GIVE i
  ENDIF
  IF $random:4 == 2
-  #GIVE item("MUSIC_DISC_CHIRP", 1)
-  #MESSAGE "&3(Chirp is baker)"
+  i = item("MUSIC_DISC_CHIRP", 1)
+  #SETITEMNAME "&4&lBaker", i
+  #GIVE i
  ENDIF
  IF $random:5 == 3
-  #GIVE item("MUSIC_DISC_WAIT", 1)
-  #MESSAGE "&3(Wait is alchemist)"
+  i = item("MUSIC_DISC_WAIT", 1)
+  #SETITEMNAME "&3&lAlchemist", i
+  #GIVE i
  ENDIF
  #MESSAGE "&3Left click a disc to select a class"
