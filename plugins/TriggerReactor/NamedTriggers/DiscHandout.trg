@@ -1,5 +1,5 @@
-#MESSAGE "&3(Ward is lumberjack)"
 #GIVE item("MUSIC_DISC_WARD", 1)
+#MESSAGE "&3(Ward is lumberjack)"
 IF $random:4 == 2
  #GIVE item("MUSIC_DISC_BLOCKS", 1)
  #MESSAGE "&3(Blocks is blacksmith)"
