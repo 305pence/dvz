@@ -1,32 +1,32 @@
 mana: repeat
 C: -1
-t: 0
+t: 6
 MobRelease: false
 location:
   shrine:
     ==: org.bukkit.Location
     world: world
-    x: 10197.155320125215
-    y: 74.0
-    z: 9954.234198780068
-    pitch: 26.685156
-    yaw: -136.5581
+    x: 10160.811690334598
+    y: 74.75
+    z: 9724.812591300635
+    pitch: 90.0
+    yaw: -179.51714
   mobspawn:
     ==: org.bukkit.Location
     world: world
-    x: -77.02879715744429
-    y: 99.60727228775397
-    z: 64.37547358619281
-    pitch: 35.262936
-    yaw: -57.89862
+    x: 10102.497597810587
+    y: 78.0
+    z: 9620.6143396294
+    pitch: 18.452633
+    yaw: -39.3248
   lobby:
     ==: org.bukkit.Location
-    world: world
-    x: 10160.70103524909
-    y: 77.36938855736308
-    z: 9962.226844062983
-    pitch: 26.295542
-    yaw: -151.41222
+    world: world_the_end
+    x: 70.98108731588765
+    y: 57.0
+    z: -22.194923365499108
+    pitch: 32.389233
+    yaw: 357.34427
   quarry:
     ==: org.bukkit.Location
     world: world
@@ -35,11 +35,43 @@ location:
     z: -291.4181345883783
     pitch: 15.4322405
     yaw: 324.11243
+  shrine1:
+    ==: org.bukkit.Location
+    world: world
+    x: 10160.811690334598
+    y: 74.75
+    z: 9724.812591300635
+    pitch: 90.0
+    yaw: -179.51714
+  shrine2:
+    ==: org.bukkit.Location
+    world: world
+    x: 10160.811690334598
+    y: 74.75
+    z: 9725.812591300635
+    pitch: 90.0
+    yaw: -179.51714
+  shrine3:
+    ==: org.bukkit.Location
+    world: world
+    x: 10161.811690334598
+    y: 74.75
+    z: 9724.812591300635
+    pitch: 90.0
+    yaw: -179.51714
+  shrine4:
+    ==: org.bukkit.Location
+    world: world
+    x: 10161.811690334598
+    y: 74.75
+    z: 9725.812591300635
+    pitch: 90.0
+    yaw: -179.51714
 scoreboard:
   dwarves: 0
 UUID:
   player:
-    0dbc4f12-8130-42e1-86d4-329e93c9fc21: c75225d7-736f-434e-92e7-2ddb497745c9
+    0dbc4f12-8130-42e1-86d4-329e93c9fc21: 6ffab371-e49f-498f-82e1-7cd3c5c227fb
     58df0149-c92d-4952-b74f-f1f7d540de04: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
     87321ea3-29a8-43cb-ac2d-b19160cc5604: 'off'
     8c9a6926-cc2f-4fe3-9d2a-961816e3bfd6: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
@@ -54,8 +86,20 @@ dragon:
   pickupPlayer: NONE
   held: NONE
 shrineHealth: 0
-test: 4
+test:
+  ==: org.bukkit.Location
+  world: world
+  x: 10201.0
+  y: 74.0
+  z: 9944.0
+  pitch: 0.0
+  yaw: 0.0
 sickness:
   0dbc4f12-8130-42e1-86d4-329e93c9fc21: 0
 lives:
   zombievillager: 0
+shrine1: 0
+shrine2: 0
+shrine3: 0
+shrine4: 0
+shrineDamage: 1

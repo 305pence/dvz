@@ -1,3 +1,5 @@
+IMPORT org.bukkit.NamespacedKey
+IMPORT org.bukkit.Bukkit
 {"UUID.game"} = "off"
 {"MobRelease"} = false
 {"shrineHealth"} = 0
@@ -18,3 +20,6 @@ ASYNC
   #CMDCON "lp user $playername parent set default"
  ENDFOR
 ENDASYNC
+bar = Bukkit.getBossBar(NamespacedKey.minecraft("pingas"))
+bar.removeAll()
+Bukkit.removeBossBar(NamespacedKey.minecraft("pingas"))

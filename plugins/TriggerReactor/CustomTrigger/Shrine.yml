@@ -1,2 +1,2 @@
 Sync: true
-Event: onBlockBreak
+Event: org.bukkit.event.player.PlayerInteractEvent
