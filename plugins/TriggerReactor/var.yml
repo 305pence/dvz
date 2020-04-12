@@ -39,12 +39,12 @@ scoreboard:
   dwarves: 0
 UUID:
   player:
-    0dbc4f12-8130-42e1-86d4-329e93c9fc21: bf4f9847-97a7-497e-ac06-594a7ff0e2db
+    0dbc4f12-8130-42e1-86d4-329e93c9fc21: c75225d7-736f-434e-92e7-2ddb497745c9
     58df0149-c92d-4952-b74f-f1f7d540de04: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
     87321ea3-29a8-43cb-ac2d-b19160cc5604: 'off'
     8c9a6926-cc2f-4fe3-9d2a-961816e3bfd6: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
     cbc38958-5331-4b20-9063-e99f124e160e: 0e3e6a24-a047-4a2f-9599-ed8edb7cd0e7
-  game: bf4f9847-97a7-497e-ac06-594a7ff0e2db
+  game: 'off'
 dragon:
   phase: DEAD
   cooldown: 0

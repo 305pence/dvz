@@ -16,8 +16,8 @@ IF $haspermission:"hero"
  IF item.getType().name() == "NETHER_STAR" && hasLore(item, "§6Hero Item")
   entity = event.getRightClicked()
   IF $getteam:player == $getteam:entity
-   IF $explevel >= 30
-    player.setLevel($explevel - 30)
+   IF $explevel >= 20
+    player.setLevel($explevel - 20)
     loc = player.getLocation()
     loc.add(0, 0.75, 0)
     locT = entity.getLocation()

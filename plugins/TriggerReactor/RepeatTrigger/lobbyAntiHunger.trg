@@ -1,12 +1,12 @@
-RADIUS = 100
-lobby = {"lobby"}
+RADIUS = 100*100
+lobby = {"location.lobby"}
 lobbyworld = lobby.getWorld()
 
 FOR player = getPlayers()
   IF player.getLocation().getWorld().getName() != lobbyworld.getName()
     #CONTINUE
   ENDIF
-  IF player.getLocation().distance(lobby) < RADIUS
+  IF player.getLocation().distanceSquared(lobby) < RADIUS
     #SETFOOD 20
   ENDIF
 ENDFOR

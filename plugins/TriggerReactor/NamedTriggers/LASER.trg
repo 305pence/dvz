@@ -43,7 +43,7 @@ IF r != null
  ENDIF
 ENDIF
 WHILE locU.distanceSquared(args[0]) <= args[1].distanceSquared(args[0])
- world.spawnParticle(p, locU, count, dis, dis, dis, 0.0)
+ world.spawnParticle(p, locU, count, dis, dis, dis, 0.0, null)
  locU.add(vec)
 ENDWHILE
  
