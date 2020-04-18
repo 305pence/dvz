@@ -4,6 +4,7 @@ IF trigger == "init"
  world = shrine.getWorld()
 ENDIF
 IF trigger == "repeat"
+ SYNC
  FOR player = world.getPlayers()
   IF {?"sickness." + $playeruuid} == null
    {?"sickness." + $playeruuid} = 0
@@ -39,4 +40,5 @@ IF trigger == "repeat"
   ENDIF
   {?"sickness." + $playeruuid} = sick
  ENDFOR
+ ENDSYNC
 ENDIF

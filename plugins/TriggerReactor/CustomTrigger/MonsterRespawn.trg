@@ -14,4 +14,7 @@ IF $haspermission:"dead"
  IF {"lives.zombievillager"} >= 1
   #GIVE item("ZOMBIE_VILLAGER_SPAWN_EGG", 1)
  ENDIF
+ IF {"lives.wolf"} >= 1
+  #GIVE item("WOLF_SPAWN_EGG", 1)
+ ENDIF
 ENDIF

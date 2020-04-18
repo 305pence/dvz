@@ -1,81 +1,93 @@
 mana: repeat
 C: -1
-t: 6
+t: 54
 MobRelease: false
 location:
   shrine:
     ==: org.bukkit.Location
     world: world
-    x: 10160.811690334598
-    y: 74.75
-    z: 9724.812591300635
+    x: 1098.8114317397135
+    y: 72.75
+    z: 7341.775248540987
     pitch: 90.0
-    yaw: -179.51714
+    yaw: 183.34119
   mobspawn:
     ==: org.bukkit.Location
     world: world
-    x: 10102.497597810587
-    y: 78.0
-    z: 9620.6143396294
-    pitch: 18.452633
-    yaw: -39.3248
+    x: 1252.1626261350873
+    y: 79.0
+    z: 7372.512248894524
+    pitch: 16.89373
+    yaw: 84.92395
   lobby:
     ==: org.bukkit.Location
     world: world_the_end
-    x: 70.98108731588765
-    y: 57.0
-    z: -22.194923365499108
-    pitch: 32.389233
-    yaw: 357.34427
+    x: 0.5047133693258414
+    y: 65.0
+    z: -10.580827339901173
+    pitch: 9.2956295
+    yaw: 357.73892
   quarry:
     ==: org.bukkit.Location
     world: world
-    x: -259.1278743705562
-    y: 88.0
-    z: -291.4181345883783
-    pitch: 15.4322405
-    yaw: 324.11243
+    x: 205.70280610052507
+    y: 67.7228477877955
+    z: 4913.243270266968
+    pitch: 6.66475
+    yaw: -49.28711
   shrine1:
     ==: org.bukkit.Location
     world: world
-    x: 10160.811690334598
-    y: 74.75
-    z: 9724.812591300635
+    x: 1098.8114317397135
+    y: 72.75
+    z: 7341.775248540987
     pitch: 90.0
-    yaw: -179.51714
+    yaw: 183.34119
   shrine2:
     ==: org.bukkit.Location
     world: world
-    x: 10160.811690334598
-    y: 74.75
-    z: 9725.812591300635
+    x: 1098.8114317397135
+    y: 72.75
+    z: 7342.775248540987
     pitch: 90.0
-    yaw: -179.51714
+    yaw: 183.34119
   shrine3:
     ==: org.bukkit.Location
     world: world
-    x: 10161.811690334598
-    y: 74.75
-    z: 9724.812591300635
+    x: 1099.8114317397135
+    y: 72.75
+    z: 7341.775248540987
     pitch: 90.0
-    yaw: -179.51714
+    yaw: 183.34119
   shrine4:
     ==: org.bukkit.Location
     world: world
-    x: 10161.811690334598
-    y: 74.75
-    z: 9725.812591300635
+    x: 1099.8114317397135
+    y: 72.75
+    z: 7342.775248540987
     pitch: 90.0
-    yaw: -179.51714
+    yaw: 183.34119
 scoreboard:
-  dwarves: 0
+  dwarves: 1
 UUID:
   player:
-    0dbc4f12-8130-42e1-86d4-329e93c9fc21: 6ffab371-e49f-498f-82e1-7cd3c5c227fb
+    0dbc4f12-8130-42e1-86d4-329e93c9fc21: 'off'
     58df0149-c92d-4952-b74f-f1f7d540de04: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
     87321ea3-29a8-43cb-ac2d-b19160cc5604: 'off'
     8c9a6926-cc2f-4fe3-9d2a-961816e3bfd6: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
     cbc38958-5331-4b20-9063-e99f124e160e: 0e3e6a24-a047-4a2f-9599-ed8edb7cd0e7
+    ff4e2e74-ad32-479e-8028-5f9a244cfb26: 335bd292-0153-4640-9c3d-7e9a80880432
+    5e635949-af0b-4363-a82e-935a476c5c72: d9eebd8d-70e4-41f5-96e9-85fc5d0c1c7d
+    7891a431-5165-4209-8baa-00c81419b30a: 335bd292-0153-4640-9c3d-7e9a80880432
+    fdfe9091-97de-495e-8a31-08ec9d454ae9: b5636e35-8d33-43ad-8530-d8613c5bdd77
+    f4d3af01-4cb8-46b2-88ba-23c8a9e55fb4: 'off'
+    5610eaae-7728-4a0d-99e4-e71e8301b8ae: 'off'
+    ddaf44a9-afa6-4e02-82bb-622c5ebcd38c: 'off'
+    c79a07f1-f640-4f69-95a2-3a72ab0b2069: 335bd292-0153-4640-9c3d-7e9a80880432
+    8aa6999e-cf8c-4648-8156-d1a57eeb70e0: d9eebd8d-70e4-41f5-96e9-85fc5d0c1c7d
+    a5e95a8d-a699-405b-9e4c-38a3e2a05540: 335bd292-0153-4640-9c3d-7e9a80880432
+    9ab39a8e-f41a-4147-9435-5aad35156e9f: 335bd292-0153-4640-9c3d-7e9a80880432
+    e81fe3ab-aa8d-4f0f-912d-8a6c9017c4f1: 'off'
   game: 'off'
 dragon:
   phase: DEAD
@@ -98,6 +110,7 @@ sickness:
   0dbc4f12-8130-42e1-86d4-329e93c9fc21: 0
 lives:
   zombievillager: 0
+  wolf: 16
 shrine1: 0
 shrine2: 0
 shrine3: 0

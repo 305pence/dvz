@@ -17,7 +17,7 @@ IF block.getType().name() == "ENCHANTING_TABLE" && $haspermission:"monster" && p
     world = $world
     world.spawnParticle(Particle.EXPLOSION_HUGE, locB, 1)
    ENDIF
-   {"shrineDamage"} = 2
+   {"shrineDamage"} = 1
    IF !($isop)
     #COOLDOWN 0.75
    ENDIF

@@ -5,7 +5,7 @@ IF cause == "ENTITY_ATTACK" || cause == "ENTITY_SWEEP_ATTACK"
  IF player == null
   #STOP
  ENDIF
- IF $haspermission:"dwarf" && ($helditemname == "DIAMOND_SWORD" || $helditemname == "DIAMOND_SHOVEL")
+ IF $haspermission:"dwarf" && ($helditemname == "DIAMOND_SWORD" || $helditemname == "IRON_SHOVEL" || $helditemname == "GOLDEN_SWORD")
    #CLEARPOTION "LUCK"
    #POTION "LUCK", 60, 1
    world = $world

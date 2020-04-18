@@ -25,7 +25,7 @@ IF event.getClickedBlock().getBlockData().getMaterial().name() == "GOLD_BLOCK" &
  IF $random:1:4 == 3
   #DROPITEM item("GLOWSTONE_DUST", 1), gold
  ENDIF
- IF $random:1:11 == 1
+ IF $random:1:21 == 1
   #CMDCON "kit LW $playername"
  ENDIF
  #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Gold" $getscore:"DvZ":"Gold" + $random:4:9

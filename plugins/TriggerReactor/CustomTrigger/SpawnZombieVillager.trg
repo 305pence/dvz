@@ -15,7 +15,6 @@ IF $idname:$helditem == "ZOMBIE_VILLAGER_SPAWN_EGG" && $haspermission:"dead" && 
     #CLEAR player
     #TP {"location.mobspawn"}
     #CMDCON "luckperms user $playername parent set zombievillager"
-    #POTION "DAMAGE_RESISTANCE", 200000, 2
     #POTION "SLOW", 200000, 1
     #POTION "HEALTH_BOOST", 200000, 5
     #CALL "MobEffect"
@@ -23,7 +22,7 @@ IF $idname:$helditem == "ZOMBIE_VILLAGER_SPAWN_EGG" && $haspermission:"dead" && 
     aMeta = axe.getItemMeta()
     aMeta.setUnbreakable(true)
     axe.setItemMeta(aMeta)
-    #SETATTRS axe, "GENERIC_ATTACK_SPEED", -2.4, "HAND", "GENERIC_ATTACK_DAMAGE", 13, "HAND", "GENERIC_KNOCKBACK_RESISTANCE", 1, "HAND"
+    #SETATTRS axe, "GENERIC_ATTACK_SPEED", -2.4, "HAND", "GENERIC_ATTACK_DAMAGE", 9, "HAND", "GENERIC_KNOCKBACK_RESISTANCE", 1, "HAND"
     armor = array(4)
     armor[3] = item("DIAMOND_HELMET", 1)
     armor[2] = item("DIAMOND_CHESTPLATE", 1)

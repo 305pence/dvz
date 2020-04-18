@@ -8,8 +8,8 @@ IF event.getItem() != null
   #STOP
  ENDIF
  IF event.getAction().name() == "RIGHT_CLICK_AIR" || event.getAction().name() == "RIGHT_CLICK_BLOCK"
-  #LASER locP, locB, "CRIT_MAGIC", 0
+  #LASER locP, locB, "SPELL_INSTANT", 0
  ELSE
-  #LASER locP, locB, "FLAME", 0.15
+  #LASER locP, locB, "SPELL_WITCH", 0.15
  ENDIF
 ENDIF

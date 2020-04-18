@@ -18,7 +18,7 @@ WHILE AC > 0
   #MESSAGE "&cYou have been selected to be an assassin"
   #POTION "INCREASE_DAMAGE" 2000, 5
   #CMDCON "lp user $playername parent add assassin"
-  #SCOREBOARD "TEAM" "monsters" "ADD" $playername
+  #SCOREBOARD "TEAM" "lobby" "ADD" $playername
   AC = AC - 1
  ELSE
   fails = fails + 1
@@ -48,10 +48,12 @@ ASYNC
           #KILL
         ENDIF
       ENDFOR
-      {"MobRelease"} = true
-      #BROADCAST "&5#========================#"
-      #BROADCAST "&5The Mobs Have Been Released"
-      #BROADCAST "&5#========================#"
+      IF {"MobRelease"} == false
+       {"MobRelease"} = true
+       #BROADCAST "&5#========================#"
+       #BROADCAST "&5The Mobs Have Been Released"
+       #BROADCAST "&5#========================#"
+      ENDIF
       #STOP
     ENDIF
     IF i == 23
@@ -91,8 +93,10 @@ ASYNC
      #KILL
    ENDIF   
   ENDFOR
-  {"MobRelease"} = true
-  #BROADCAST "&5#========================#"
-  #BROADCAST "&5The Mobs Have Been Released"
-  #BROADCAST "&5#========================#"
+  IF {"MobRelease"} == false
+   {"MobRelease"} = true
+   #BROADCAST "&5#========================#"
+   #BROADCAST "&5The Mobs Have Been Released"
+   #BROADCAST "&5#========================#"
+  ENDIF
 ENDASYNC

@@ -31,12 +31,14 @@ IF $haspermission:"hero"
      inv = player.getInventory()
      FOR i = 36:40
       item = inv.getItem(i)
-      IF item IS Damageable
+      meta = item.getItemMeta()
+      IF meta.hasDamage()
        IF meta.getDamage() > 5
         meta.setDamage(meta.getDamage() - 5)
        ELSE
         meta.setDamage(0)
        ENDIF
+       item.setItemMeta(meta)
       ENDIF
      ENDFOR
     ENDIF

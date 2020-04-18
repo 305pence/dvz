@@ -6,7 +6,7 @@ IF entity.getType().name() == "ZOMBIE"
   IF player == null
    #STOP
   ENDIF
-  IF $haspermission:"dwarf" && ($helditemname == "DIAMOND_SWORD" || $helditemname == "DIAMOND_SHOVEL")
+  IF $haspermission:"dwarf" && ($helditemname == "DIAMOND_SWORD" || $helditemname == "IRON_SHOVEL" || $helditemname == "GOLDEN_SWORD")
     #CLEARPOTION "LUCK"
     #POTION "LUCK", 60, 1
     world = $world

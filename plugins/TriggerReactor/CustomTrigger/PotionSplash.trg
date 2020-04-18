@@ -5,7 +5,7 @@ IF name == "potion"
  name = event.getEntity().getUniqueId()
  nearby = entity.getNearbyEntities(2.5, 2.5, 2.5)
  FOR player = nearby
-  IF $haspermission:"dwarf"
+  IF $haspermission:"dwarf" && !($haspermission:"assassin")
    #CLEARPOTION {?name + ".effect"}
    #POTION {?name + ".effect"}, {?name + ".time"}, {?name + ".potency"}
   ENDIF

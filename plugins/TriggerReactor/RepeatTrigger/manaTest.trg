@@ -26,22 +26,28 @@ FOR player = getPlayers()
   ELSEIF $haspermission:"dragonborn"
    loc = {"location.shrine"}
    IF $world == loc.getWorld()
-    IF player.distanceSquared(loc) <= 25
+    IF player.getLocation().distanceSquared(loc) <= 25
      IF $getscore:"DvZ":"Gold" >= 50
-      mana = 3
+      mana2 = 3
      ELSE
-      mana = 1
+      mana2 = 1
      ENDIF
-     IF $explevel < 601 - mana
-      level = mana
+     IF $explevel < 601 - mana2
+      level = mana2 + $explevel
      ELSE
       level = 600
      ENDIF
+    ELSE
+     level = $explevel
     ENDIF
+   ELSE
+    level = $explevel
    ENDIF
   ELSE
-   level = $explevel
+   #CONTINUE
   ENDIF
+  mana = null
+  mana2 = null
   player.setLevel(level)
  ENDIF
 ENDFOR
