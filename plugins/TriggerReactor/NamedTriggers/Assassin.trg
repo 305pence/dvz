@@ -16,7 +16,7 @@ WHILE AC > 0
  player = dwarves[$random:0:pu]
  IF !($haspermission:"assassin") && player != null
   #MESSAGE "&cYou have been selected to be an assassin"
-  #POTION "INCREASE_DAMAGE" 2000, 5
+  #POTION "INCREASE_DAMAGE" 2000, 4
   #CMDCON "lp user $playername parent add assassin"
   #SCOREBOARD "TEAM" "lobby" "ADD" $playername
   AC = AC - 1
@@ -39,7 +39,7 @@ ASYNC
      #BREAK
     ENDIF
     count = toDouble($onlineplayers)
-    IF p/count >= 2/3
+    IF p/count >= 2/3.0
       #WAIT 4
     ELSE
       FOR player = getPlayers()
@@ -65,7 +65,7 @@ ASYNC
       ENDIF
      ENDFOR
      fails = 0
-     WHILE p/count >= 2/3
+     WHILE p/count >= 2/3.0
       u = $random:0:pu
       player = dwarves[pu]
       IF $haspermission:"dwarf" && !($haspermission:"hero" || $haspermission:"plague" || $haspermission:"assassin")
@@ -74,16 +74,19 @@ ASYNC
        #KILL
       ELSE
        fails = fails + 1
-       IF fails == 50
+       IF fails == 100
+        #BROADCAST "&cFailed to find dwarves to kill in 100 tries to satisfy the ratio. i am not so good at my job am i..."
         #BREAK
        ENDIF
       ENDIF
+//reminder to remove this part later
       p = 0
       FOR player = getPlayers()
        IF $haspermission:"dwarf" && !($haspermission:"hero" || $haspermission:"plague" || $haspermission:"assassin")
         p = p + 1
        ENDIF
       ENDFOR
+//seems unnessesary
      ENDWHILE
     ENDIF
   ENDFOR

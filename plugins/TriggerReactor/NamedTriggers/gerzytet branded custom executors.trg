@@ -1,2 +1,2 @@
-#REGISTERPLACEHOLDERS "getscore", "getteam"
-#REGISTEREXECUTORS "CLEAR", "LASER", "WitherWarriorKit","DragonBornKit"
+#REGISTERPLACEHOLDERS "getscore", "getteam", "LASER"
+#REGISTEREXECUTORS "CLEAR", "LASER", "WitherWarriorKit","DragonBornKit","KIT",

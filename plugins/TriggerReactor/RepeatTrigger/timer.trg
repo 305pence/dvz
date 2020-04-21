@@ -1,3 +1,4 @@
+IMPORT org.bukkit.entity.EntityType
 IF trigger == "repeat"
  IF {"t"} == 29
   {"t"} = {"t"} + 1
@@ -7,14 +8,18 @@ IF trigger == "repeat"
  ENDIF
  #CALL "dwarfCounter"
  IF {"MobRelease"} == true
-  IF $random:1:8 == 7
-   {"lives.zombievillager"} = 1
-  ENDIF
-  IF $random:1:8 == 7
-   {"lives.wolf"} = $random:3:6
-  ENDIF
- ELSE
-  {"lives.zombievillager"} = 0
-  {"lives.wolf"} = 0
+  v = EntityType.values()
+  FOR array = v
+   IF array.isAlive()
+    mob = array.toString()
+    IF {"lives." + mob} == null || (mob == "ZOMBIE" || mob == "SKELETON" || mob == "SPIDER" || mob == "CREEPER")
+     #CONTINUE
+    ENDIF
+    r = {"rarity.chance." + mob}
+    IF $random:1:101 <= r
+     {"lives." + mob} = {"rarity.count."+ mob}
+    ENDIF
+   ENDIF
+  ENDFOR
  ENDIF
 ENDIF

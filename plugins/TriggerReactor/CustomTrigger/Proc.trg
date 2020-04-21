@@ -18,5 +18,10 @@ IF cause == "ENTITY_ATTACK" || cause == "ENTITY_SWEEP_ATTACK"
    world = $world
    world.spawnParticle(Particle.VILLAGER_HAPPY, entity.getLocation().getX(), (entity.getLocation().getY() + 1), entity.getLocation().getZ(), 20, 0.5, 0.5, 0.5)
   ENDIF
+ ELSE
+  player = event.getDamager()
+  IF $haseffect:"LUCK"
+   event.setDamage(event.getDamage() * 1.5)
+  ENDIF
  ENDIF
 ENDIF

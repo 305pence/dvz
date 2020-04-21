@@ -1,6 +1,6 @@
 IMPORT org.bukkit.NamespacedKey
 IMPORT org.bukkit.Bukkit
-IF {"UUID.game"} != {"UUID.player." + $playeruuid}
+IF {"UUID.player." + $playeruuid} == null
  ASYNC
   #WAIT 2
   #TP {"location.lobby"}

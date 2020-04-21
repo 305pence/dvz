@@ -1,4 +1,3 @@
-sync: true
-permissions:
-- moderator
 aliases: []
+sync: false
+permissions: []

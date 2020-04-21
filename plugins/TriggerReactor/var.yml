@@ -1,94 +1,96 @@
 mana: repeat
 C: -1
-t: 54
-MobRelease: false
+t: -1
+MobRelease: true
 location:
   shrine:
     ==: org.bukkit.Location
     world: world
-    x: 1098.8114317397135
-    y: 72.75
-    z: 7341.775248540987
-    pitch: 90.0
-    yaw: 183.34119
+    x: 2540.699999988079
+    y: 65.0
+    z: 9360.35049659992
+    pitch: 8.665102
+    yaw: -133.5542
   mobspawn:
     ==: org.bukkit.Location
     world: world
-    x: 1252.1626261350873
-    y: 79.0
-    z: 7372.512248894524
-    pitch: 16.89373
-    yaw: 84.92395
+    x: 2490.2685952641336
+    y: 64.0
+    z: 9547.389828901461
+    pitch: 9.539443
+    yaw: 171.63498
   lobby:
     ==: org.bukkit.Location
     world: world_the_end
-    x: 0.5047133693258414
+    x: -1.0831469811821957
     y: 65.0
-    z: -10.580827339901173
-    pitch: 9.2956295
-    yaw: 357.73892
+    z: -10.558098127057752
+    pitch: 23.914288
+    yaw: 55.224598
   quarry:
     ==: org.bukkit.Location
     world: world
-    x: 205.70280610052507
-    y: 67.7228477877955
-    z: 4913.243270266968
-    pitch: 6.66475
-    yaw: -49.28711
+    x: -259.1278743705562
+    y: 88.0
+    z: -291.4181345883783
+    pitch: 15.4322405
+    yaw: 324.11243
   shrine1:
     ==: org.bukkit.Location
     world: world
-    x: 1098.8114317397135
-    y: 72.75
-    z: 7341.775248540987
-    pitch: 90.0
-    yaw: 183.34119
+    x: 2540.699999988079
+    y: 65.0
+    z: 9360.35049659992
+    pitch: 8.665102
+    yaw: -133.5542
   shrine2:
     ==: org.bukkit.Location
     world: world
-    x: 1098.8114317397135
-    y: 72.75
-    z: 7342.775248540987
-    pitch: 90.0
-    yaw: 183.34119
+    x: 2540.699999988079
+    y: 65.0
+    z: 9361.35049659992
+    pitch: 8.665102
+    yaw: -133.5542
   shrine3:
     ==: org.bukkit.Location
     world: world
-    x: 1099.8114317397135
-    y: 72.75
-    z: 7341.775248540987
-    pitch: 90.0
-    yaw: 183.34119
+    x: 2541.699999988079
+    y: 65.0
+    z: 9360.35049659992
+    pitch: 8.665102
+    yaw: -133.5542
   shrine4:
     ==: org.bukkit.Location
     world: world
-    x: 1099.8114317397135
-    y: 72.75
-    z: 7342.775248540987
-    pitch: 90.0
-    yaw: 183.34119
+    x: 2541.699999988079
+    y: 65.0
+    z: 9361.35049659992
+    pitch: 8.665102
+    yaw: -133.5542
+  portal: false
 scoreboard:
-  dwarves: 1
+  dwarves: 0
 UUID:
   player:
-    0dbc4f12-8130-42e1-86d4-329e93c9fc21: 'off'
+    0dbc4f12-8130-42e1-86d4-329e93c9fc21: 3ca9d7cd-016a-4b2f-82ef-5fda81b3780b
     58df0149-c92d-4952-b74f-f1f7d540de04: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
     87321ea3-29a8-43cb-ac2d-b19160cc5604: 'off'
     8c9a6926-cc2f-4fe3-9d2a-961816e3bfd6: 2f7b4a36-769e-466d-b6d9-8b6309aa20f0
     cbc38958-5331-4b20-9063-e99f124e160e: 0e3e6a24-a047-4a2f-9599-ed8edb7cd0e7
-    ff4e2e74-ad32-479e-8028-5f9a244cfb26: 335bd292-0153-4640-9c3d-7e9a80880432
-    5e635949-af0b-4363-a82e-935a476c5c72: d9eebd8d-70e4-41f5-96e9-85fc5d0c1c7d
-    7891a431-5165-4209-8baa-00c81419b30a: 335bd292-0153-4640-9c3d-7e9a80880432
-    fdfe9091-97de-495e-8a31-08ec9d454ae9: b5636e35-8d33-43ad-8530-d8613c5bdd77
-    f4d3af01-4cb8-46b2-88ba-23c8a9e55fb4: 'off'
-    5610eaae-7728-4a0d-99e4-e71e8301b8ae: 'off'
-    ddaf44a9-afa6-4e02-82bb-622c5ebcd38c: 'off'
-    c79a07f1-f640-4f69-95a2-3a72ab0b2069: 335bd292-0153-4640-9c3d-7e9a80880432
-    8aa6999e-cf8c-4648-8156-d1a57eeb70e0: d9eebd8d-70e4-41f5-96e9-85fc5d0c1c7d
-    a5e95a8d-a699-405b-9e4c-38a3e2a05540: 335bd292-0153-4640-9c3d-7e9a80880432
-    9ab39a8e-f41a-4147-9435-5aad35156e9f: 335bd292-0153-4640-9c3d-7e9a80880432
-    e81fe3ab-aa8d-4f0f-912d-8a6c9017c4f1: 'off'
-  game: 'off'
+    ff4e2e74-ad32-479e-8028-5f9a244cfb26: 'off'
+    5e635949-af0b-4363-a82e-935a476c5c72: b41ac806-d2dd-4e5b-8d33-a7c697b7e687
+    7891a431-5165-4209-8baa-00c81419b30a: 3ca9d7cd-016a-4b2f-82ef-5fda81b3780b
+    fdfe9091-97de-495e-8a31-08ec9d454ae9: 97c30909-f9e5-47fa-b11c-789a1977a5ba
+    c79a07f1-f640-4f69-95a2-3a72ab0b2069: 657324ec-4f72-4263-949a-d9e1a0ed6c9d
+    ddaf44a9-afa6-4e02-82bb-622c5ebcd38c: 657324ec-4f72-4263-949a-d9e1a0ed6c9d
+    f4d3af01-4cb8-46b2-88ba-23c8a9e55fb4: de3269bf-8739-4884-9830-7bfc9167b3ff
+    957cfc19-892b-4987-a26c-594f0b1d9ac5: 'off'
+    36b23594-7b47-423b-baca-e8ab99c11428: 42ee187a-4df3-4e9b-9e49-3da1ad363c32
+    e081d5be-2938-4614-a3a4-f93b43d1476f: 42ee187a-4df3-4e9b-9e49-3da1ad363c32
+    1db3e756-7241-4eea-8e34-6c22004f9998: 'off'
+    5610eaae-7728-4a0d-99e4-e71e8301b8ae: ca5b1d60-52e0-45ff-a97f-adc1512b7daf
+    8aa6999e-cf8c-4648-8156-d1a57eeb70e0: 97b30020-25a6-44fe-940b-c61077904407
+  game: 3ca9d7cd-016a-4b2f-82ef-5fda81b3780b
 dragon:
   phase: DEAD
   cooldown: 0
@@ -99,20 +101,615 @@ dragon:
   held: NONE
 shrineHealth: 0
 test:
-  ==: org.bukkit.Location
-  world: world
-  x: 10201.0
-  y: 74.0
-  z: 9944.0
-  pitch: 0.0
-  yaw: 0.0
+  test:
+    test:
+      test:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: WOODEN_HOE
 sickness:
   0dbc4f12-8130-42e1-86d4-329e93c9fc21: 0
 lives:
   zombievillager: 0
-  wolf: 16
-shrine1: 0
-shrine2: 0
-shrine3: 0
-shrine4: 0
-shrineDamage: 1
+  wolf: 0
+  zombie: 1
+  skeleton: 1
+  creeper: 1
+  cave_spider: 1
+  enderman: 1
+  zombie_villager: 1
+  ZOMBIE: 1
+  SKELETON: 1
+  CREEPER: 1
+  CAVE_SPIDER: 3
+  ENDERMAN: 0
+  ZOMBIE_VILLAGER: 1
+  SPIDER: 1
+  WOLF: 5
+  BEE: 10
+shrine1: 30
+shrine2: 30
+shrine3: 30
+shrine4: 30
+shrineDamage: 0
+kit:
+  ZOMBIE:
+    inv:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: IRON_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 3
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COOKED_BEEF
+        amount: 5
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: POTION
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:healing
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strength
+      '4':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: WOODEN_HOE
+    armor:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: IRON_BOOTS
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: IRON_LEGGINGS
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: IRON_CHESTPLATE
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: IRON_HELMET
+  SKELETON:
+    inv:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: BOW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            ARROW_DAMAGE: 4
+            ARROW_INFINITE: 1
+            ARROW_FIRE: 1
+            ARROW_KNOCKBACK: 2
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: ARROW
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            KNOCKBACK: 1
+          repair-cost: 1
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: VINE
+        amount: 10
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COOKED_BEEF
+        amount: 5
+    armor:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: LEATHER_BOOTS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          enchants:
+            PROTECTION_PROJECTILE: 1
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: LEATHER_LEGGINGS
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          enchants:
+            PROTECTION_PROJECTILE: 1
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: LEATHER_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          enchants:
+            PROTECTION_PROJECTILE: 1
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: LEATHER_HELMET
+        meta:
+          ==: ItemMeta
+          meta-type: LEATHER_ARMOR
+          enchants:
+            PROTECTION_PROJECTILE: 1
+  CREEPER:
+    inv:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: GUNPOWDER
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: Kaboom
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COOKED_BEEF
+        amount: 2
+    armor:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_BOOTS
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_LEGGINGS
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_CHESTPLATE
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_HELMET
+  CAVE_SPIDER:
+    inv:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: GOLDEN_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fSpider Fang
+          lore:
+          - 'Attack: Poisons dwarves with nausa or slowness'
+          - 'Right Click: poison that corrodes walls'
+          attribute-modifiers:
+            GENERIC_ATTACK_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: -1.0
+              name: yeet
+              slot: HAND
+              uuid: ff083183-b92a-4617-a6c0-97afabf95942
+              operation: 0
+            GENERIC_ATTACK_DAMAGE:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 10.0
+              name: yeet
+              slot: HAND
+              uuid: 523e334e-5696-4086-93f7-c2f234571767
+              operation: 0
+          Unbreakable: true
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: SPLASH_POTION
+        amount: 3
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          lore:
+          - 'Attack: Poisons the dwarf §c§o(10 mana)'
+          potion-type: minecraft:strong_poison
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COBWEB
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          lore:
+          - 'Attack: Wraps the attacked dwarf in a web'
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COOKED_BEEF
+        amount: 10
+    armor:
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: MAGMA_CREAM
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: nerfing cream?
+          enchants:
+            BINDING_CURSE: 1
+          attribute-modifiers:
+            GENERIC_MAX_HEALTH:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: -14.0
+              name: yeet
+              slot: CHEST
+              uuid: 0e60ffab-a53f-4692-9041-c776bb44b100
+              operation: 0
+  SPIDER:
+    inv:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: STONE_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fSpider Fang
+          lore:
+          - 'Attack: Poisons dwarves with nausa or slowness'
+          attribute-modifiers:
+            GENERIC_ATTACK_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: -1.0
+              name: yeet
+              slot: HAND
+              uuid: e955b675-ae20-463d-b8c6-3eed02483963
+              operation: 0
+            GENERIC_ATTACK_DAMAGE:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 8.0
+              name: yeet
+              slot: HAND
+              uuid: 01479d6b-17b9-4a10-9dbe-9290530f980f
+              operation: 0
+          Unbreakable: true
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: SPLASH_POTION
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          lore:
+          - 'Attack: Poisons the dwarf §c§o(10 mana)'
+          potion-type: minecraft:strong_poison
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: POTION
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_healing
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COBWEB
+        amount: 4
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          lore:
+          - 'Attack: Wraps the attacked dwarf in a web'
+      '4':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COOKED_BEEF
+        amount: 10
+    armor:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_BOOTS
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_LEGGINGS
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_CHESTPLATE
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_HELMET
+  ZOMBIE_VILLAGER:
+    inv:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: DIAMOND_AXE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: §fYe ol' door chopper
+          enchants:
+            SWEEPING_EDGE: 5
+          attribute-modifiers:
+            GENERIC_ATTACK_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: -2.4
+              name: yeet
+              slot: HAND
+              uuid: b8aa02da-e9fc-4dad-8bcf-98424d7dc76d
+              operation: 0
+            GENERIC_ATTACK_DAMAGE:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 9.0
+              name: yeet
+              slot: HAND
+              uuid: 9a0b00a3-a7ce-4cb5-8a9d-6a885aaded57
+              operation: 0
+            GENERIC_KNOCKBACK_RESISTANCE:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 1.0
+              name: yeet
+              slot: HAND
+              uuid: 59b10f16-d7da-411f-9226-3cf6a2cfd862
+              operation: 0
+          Unbreakable: true
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: WOODEN_HOE
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COOKED_BEEF
+        amount: 10
+    armor:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: DIAMOND_BOOTS
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: DIAMOND_LEGGINGS
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: DIAMOND_CHESTPLATE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          attribute-modifiers:
+            GENERIC_MOVEMENT_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: -0.02
+              name: yeet
+              slot: CHEST
+              uuid: 0337f5c7-c627-4df2-ac42-83d6a3cdc9ea
+              operation: 0
+            GENERIC_ARMOR:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 8.0
+              name: yeet
+              slot: CHEST
+              uuid: d1e50ea1-68da-454d-a3b7-577a2a5bf160
+              operation: 0
+            GENERIC_ARMOR_TOUGHNESS:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 2.0
+              name: yeet
+              slot: CHEST
+              uuid: b44e123d-d16c-497a-9302-096faf150d84
+              operation: 0
+            GENERIC_MAX_HEALTH:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 20.0
+              name: yeet
+              slot: CHEST
+              uuid: 4d65528a-cc27-48c3-b2be-36b11d0859ef
+              operation: 0
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: DIAMOND_HELMET
+  WOLF:
+    inv:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: IRON_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          attribute-modifiers:
+            GENERIC_ATTACK_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: -1.0
+              name: yeet
+              slot: HAND
+              uuid: 4dccd9a8-a3a9-4266-8376-deec619f09b7
+              operation: 0
+            GENERIC_ATTACK_DAMAGE:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 9.0
+              name: yeet
+              slot: HAND
+              uuid: 72400e98-a18b-4999-aad7-220b9c41950a
+              operation: 0
+          Unbreakable: true
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: GOLDEN_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            FIRE_ASPECT: 2
+            KNOCKBACK: 1
+          attribute-modifiers:
+            GENERIC_ATTACK_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: -1.0
+              name: yeet
+              slot: HAND
+              uuid: e42b0929-803f-40b2-a174-4f3937bd9a17
+              operation: 0
+            GENERIC_ATTACK_DAMAGE:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 4.0
+              name: yeet
+              slot: HAND
+              uuid: 1022326c-b535-4de2-9653-bc14c6a20f71
+              operation: 0
+          Unbreakable: true
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: COOKED_BEEF
+        amount: 20
+    armor:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_BOOTS
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_LEGGINGS
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_CHESTPLATE
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: CHAINMAIL_HELMET
+  BEE:
+    inv:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: FISHING_ROD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 5
+          repair-cost: 1
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: HONEY_BOTTLE
+        amount: 5
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:long_slow_falling
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: SPLASH_POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_poison
+      '4':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: SPLASH_POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_poison
+      '5':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: SPLASH_POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:long_weakness
+      '6':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_leaping
+      '7':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_leaping
+      '8':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: HONEY_BLOCK
+        amount: 4
+    armor:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: GOLDEN_BOOTS
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: GOLDEN_LEGGINGS
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: GOLDEN_CHESTPLATE
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2230
+        type: GOLDEN_HELMET
+rarity:
+  chance:
+    ENDERMEN: 1
+    CAVE_SPIDER: 10
+    ZOMBIE_VILLAGER: 12
+    WOLF: 10
+    ENDERMAN: 1
+    '5': 10
+    BEE: 5
+  count:
+    ENDERMEN: 1
+    CAVE_SPIDER: 3
+    ZOMBIE_VILLAGER: 1
+    WOLF: 5
+    ENDERMAN: 1
+    BEE: 10

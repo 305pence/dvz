@@ -47,6 +47,8 @@ IF event.getItem().getType().name() == "POTION" && $haspermission:"dwarf"
     mana = 10
     IF $haspermission:"witherwarrior"
      mana = 180
+    ELSEIF $haspermission:"dragonborn"
+     mana = 25
     ENDIF
     share = false
     cd = 0.5

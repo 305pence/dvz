@@ -1,5 +1,6 @@
 IMPORT java.lang.Integer
-s = args[0]
+IMPORT java.lang.String
+s = args[0].toUpperCase()
 c = args[1]
 IF {"lives." + s} == null
  #MESSAGE "typo?"

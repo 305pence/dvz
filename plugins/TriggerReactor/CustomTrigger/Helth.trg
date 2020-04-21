@@ -6,6 +6,7 @@ team = $getteam:player
 IF team == null
  #STOP
 ENDIF
-IF team.getName() == "monsters"
+cause = event.getCause().name()
+IF team.getName() == "monsters" && cause == "FALL"
  #CANCELEVENT
 ENDIF

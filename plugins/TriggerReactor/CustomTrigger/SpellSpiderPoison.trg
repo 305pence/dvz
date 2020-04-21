@@ -3,7 +3,7 @@ IF event.getDamager().getType().name() != "PLAYER"
 ENDIF
 player = event.getDamager()
 IF $haspermission:"spider"
- IF $helditemname == "GOLDEN_AXE"
+ IF $helditemname == "GOLDEN_AXE" || $helditemname == "STONE_AXE"
   r = $random:1:4
   player = entity
   IF r == 1
