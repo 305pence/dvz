@@ -9,8 +9,9 @@ name = args[0].toUpperCase()
 inv = player.getInventory()
 
 IF {"lives." + name} == null
- #MESSAGE "&3This class does not exist my boy"
- #STOP
+ kitType = "other, not mob"
+ELSE
+ kitType = "mob"
 ENDIF
 
 IF args[1] == "inv"
@@ -23,9 +24,13 @@ ELSE
 ENDIF
 pu = 0
 FOR i = 0:c
- {"kit." + name + "." + args[1] + "." + i} = inv.getItem(i)
+ IF inv.getItem(i) != null
+  {"kit." + name + "." + args[1] + "." + i} = inv.getItem(i).clone()
+ ELSE
+  {"kit." + name + "." + args[1] + "." + i} = null
+ ENDIF
  IF inv.getItem(i) != null
   pu = pu + 1
  ENDIF
 ENDFOR
-#MESSAGE "&3"+pu+" items have added to the "+ name +"'s " + args[1]
+#MESSAGE "&3"+pu+" items have added to the "+ name +"'s " + args[1] + ". (" + kitType + ")"

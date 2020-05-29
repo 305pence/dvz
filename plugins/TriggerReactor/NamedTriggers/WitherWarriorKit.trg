@@ -1,6 +1,6 @@
 IMPORT org.bukkit.inventory.ItemFlag
 player = args[0]
-kit = array(6)
+kit = array(5)
 armor = array(4)
 slot = array(4)
 sword = item("STONE_SWORD", 1)
@@ -26,20 +26,19 @@ kit[0] = sword
 kit[1] = bow
 kit[2] = horn
 kit[3] = item("MILK_BUCKET", 10)
-kit[4] = item("GOLDEN_APPLE", 10)
-g = item("DIAMOND_HOE", 1)
-#SETITEMNAME "&5Ray Gnun", g
-#SETITEMLORE "laser", g
-kit[5] = g
-armor[3] = item("DIAMOND_HELMET", 1)
+kit[4] = item("COOKED_BEEF", 32)
+armor[3] = item("WITHER_SKELETON_SKULL", 1)
 armor[2] = item("DIAMOND_CHESTPLATE", 1)
 armor[1] = item("DIAMOND_LEGGINGS", 1)
 armor[0] = item("DIAMOND_BOOTS", 1)
+values = $array:3:6:8:3
+slot = $array:"FEET":"LEGS":"CHEST":"HEAD"
 FOR i = 0:6
  #GIVE kit[i]
 ENDFOR
 FOR i = 0:4
  #ENCHANT armor[i], "PROTECTION_ENVIRONMENTAL", 3, "DURABILITY", 3
+ #SETATTRS armor[i] "GENERIC_ARMOR", values[i], slot[i], "GENERIC_ARMOR_TOUGHNESS", 6, slot[i], "GENERIC_MAX_HEALTH", 2, slot[i]
  #SETITEMLORE "&6Hero Item", armor[i]
  #SETPLAYERINV 36+i, armor[i]
 ENDFOR

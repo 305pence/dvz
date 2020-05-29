@@ -1,0 +1,25 @@
+lastAccountName: SirSwammieKiller
+timestamps:
+  login: 1589339149649
+  logout: 1589066554585
+  lastteleport: 1588640721738
+  kits:
+    gnun: 1588402903158
+    test: 1587536294381
+    dwarf: 1588655696797
+ipAddress: 74.197.74.47
+logoutlocation:
+  world: world
+  x: 1097.9754024123717
+  y: 73.0
+  z: 7328.300000011921
+  yaw: 255.80017
+  pitch: 30.392107
+lastlocation:
+  world: world
+  x: 233.00371798737828
+  y: 74.0
+  z: 350.0855734066424
+  yaw: 238.24634
+  pitch: 36.252426
+afk: false

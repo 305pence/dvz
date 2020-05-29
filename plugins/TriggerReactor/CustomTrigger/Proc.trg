@@ -2,7 +2,7 @@ cause = event.getCause().name()
 IMPORT org.bukkit.Particle
 IF cause == "ENTITY_ATTACK" || cause == "ENTITY_SWEEP_ATTACK"
  player = entity
- IF entity.getType().name() == "ZOMBIE"
+ IF entity.getType().name() != "PLAYER"
   player = event.getDamager()
   IF $haseffect:"LUCK"
    event.setDamage(1337)

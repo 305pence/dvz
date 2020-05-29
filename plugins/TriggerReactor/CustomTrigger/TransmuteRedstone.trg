@@ -6,18 +6,18 @@ IF event.getAction() != Action.RIGHT_CLICK_BLOCK || event.getHand().name() != "H
 ENDIF
 
 IF event.getClickedBlock().getBlockData().getMaterial().name() == "CAULDRON" && $helditemname == "REDSTONE" && event.getClickedBlock().getBlockData().getAsString() != "minecraft:cauldron[level=0]" && $haspermission:"alchemist"
- IF $explevel >= 5
-  IF takeItem(player, "REDSTONE", 2)
+ IF $explevel >= 8
+  IF takeItem(player, "REDSTONE", 6)
    #COOLDOWN 0.4
    SYNC
     block
    ENDSYNC
    block = event.getClickedBlock()
    data = block.getBlockData()
-   player.setLevel($explevel - 5)
+   player.setLevel($explevel - 8)
    data.setLevel(data.getLevel() - 1)
    block.setBlockData(data)
-   #DROPITEM item("BLAZE_POWDER", 1), player.getLocation()
+   #DROPITEM item("LAPIS_LAZULI", 4), player.getLocation()
   ELSE
    #MESSAGE "&62 Redstone &3is required to transmute"
   ENDIF

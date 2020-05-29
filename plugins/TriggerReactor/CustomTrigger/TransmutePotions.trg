@@ -33,7 +33,9 @@ IF $explevel >= 10
     #CMDCON "give $playername potionoffireres 1"
    ENDIF
   ENDFOR
-  #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Gold" $getscore:"DvZ":"Gold" + $random:4:10
+  IF $getscore:"DvZ":"Gold"
+	#SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Gold" $getscore:"DvZ":"Gold" + $random:4:10
+  ENDIF
  ELSE
   #MESSAGE "&63 Mundane Potions &3are required to transmute."
  ENDIF

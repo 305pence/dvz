@@ -28,9 +28,9 @@ IF event.getItem().getType().name() == "POTION" && $haspermission:"dwarf"
  ELSEIF potion.getType().getEffectType() != null
   pu = potion.getType().getEffectType().getName()
   IF pu == "HEAL" || pu == "INCREASE_DAMAGE" || pu == "FIRE_RESISTANCE" || pu == "SPEED"
-   mana = 30
+   mana = 20
    share = true
-   cd = 2.0
+   cd = 1.0
    IF potion.isUpgraded()
     p = 1800
     u = 2
@@ -43,8 +43,12 @@ IF event.getItem().getType().name() == "POTION" && $haspermission:"dwarf"
    ENDIF
    IF potion.getType().isInstant()
     p = 1
-    u = 1 + u
-    mana = 10
+	IF $haspermission:"dragonborn"
+     u = u + 2
+	ELSE
+	 u 
+	ENDIF
+    mana = 6
     IF $haspermission:"witherwarrior"
      mana = 180
     ELSEIF $haspermission:"dragonborn"

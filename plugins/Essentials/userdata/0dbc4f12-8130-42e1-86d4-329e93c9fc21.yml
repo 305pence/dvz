@@ -1,29 +1,40 @@
 lastAccountName: 30Spence
 timestamps:
-  login: 1579140254402
-  logout: 1579140250591
+  login: 1589339358356
+  logout: 1589339351959
   kits:
-    blacksmith: 1579139589590
-    alchemist: 1579136132297
+    alchemist: 1586822636702
     test: 1576036610086
-    tailor: 1579136138647
-    baker: 1579136135472
-    lw: 1577918024945
-    lumberjack: 1579136141526
-  lastteleport: 1579139688790
+    color: 1588818529863
+    tailor: 1588478993986
+    baker: 1588900093205
+    lw: 1588298330074
+    dtools: 1588400918367
+    gnun: 1588899309978
+    eye: 1587610907300
+    blacksmith: 1588901115584
+    skeleton: 1586823188106
+    waterhero: 1588404588023
+    zombie: 1586823102326
+    builder: 1588900063381
+    dwarf: 1588481324032
+    lumberjack: 1588397125579
+    creeper: 1586225227524
+  lastteleport: 1589336055954
 ipAddress: 192.168.0.11
 logoutlocation:
   world: world
-  x: -671.3037095543875
-  y: 175.0
-  z: -713.5113951275747
-  yaw: -61.475983
-  pitch: 16.019796
-afk: true
+  x: 293.47389047451907
+  y: 70.0
+  z: 344.30000001192093
+  yaw: -112.47164
+  pitch: 33.89132
+afk: false
 lastlocation:
   world: world
-  x: -541.5
-  y: 138.0625002
-  z: -454.5
-  yaw: -34.093662
-  pitch: 20.943258
+  x: -729.3285924577272
+  y: 76.30351808796108
+  z: -799.1535768405762
+  yaw: 188.56425
+  pitch: 18.159422
+confirm-clear: false

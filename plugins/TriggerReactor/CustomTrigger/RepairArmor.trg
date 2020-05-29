@@ -10,15 +10,15 @@ IF (pu == "DIAMOND_HELMET" || pu == "DIAMOND_CHESTPLATE" || pu == "DIAMOND_LEGGI
   meta = item.getItemMeta()
   IF meta.hasDamage()
    #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Gold" $getscore:"DvZ":"Gold" - 2
-   IF meta.getDamage() > 150
-    meta.setDamage(meta.getDamage() - 150)
+   IF meta.getDamage() > 50
+    meta.setDamage(meta.getDamage() - 50)
    ELSE
     meta.setDamage(0)
    ENDIF
    item.setItemMeta(meta)
    #SETHELDITEM item
    #SOUNDALL player.getLocation(), "BLOCK_ANVIL_USE", 1, 0.7
-   #COOLDOWN 0.4
+   #COOLDOWN 0.2
   ELSE
    #MESSAGE "&3Already repaired."
   ENDIF

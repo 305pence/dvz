@@ -42,7 +42,9 @@ IF entity.getType().name() == "WITHER"
  IF dwarves/players >= 2/3   //comparing the dwarves to player ratio to determine whether an assassin event is nessessary or not
   #CALL "Assassin"
  ELSE
+  #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Doom Clock" 999
   {"MobRelease"} = true
+  #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Kills" 0
   #BROADCAST "&5#========================#"
   #BROADCAST "&5The Mobs Have Been Released"
   #BROADCAST "&5#========================#"

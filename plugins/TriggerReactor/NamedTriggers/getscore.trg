@@ -2,7 +2,9 @@
 IMPORT org.bukkit.Bukkit
 IMPORT java.lang.String
 IMPORT org.bukkit.entity.Player
-
+IF args.length < 2
+	#STOP
+ENDIF
 IF args[1] IS String
  return = Bukkit.getScoreboardManager().getMainScoreboard().getObjective(args[0]).getScore(args[1]).getScore()
 ELSE

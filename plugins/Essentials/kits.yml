@@ -42,9 +42,44 @@ kits:
       color:yellow,orange fade:red shape:ball effect:trail color:red,purple fade:pink
       shape:star effect:trail power:1
   test:
-    delay: 3
+    delay: 0
     items:
-    - spectral_arrow 1
+    - diamond_sword 1 damage_all:2
+    - bow 1 arrow_damage:2
+    - healingiipotion 1
+    - strengthiipotion 1
+    - zombie_spawn_egg 1
+    - skeleton_spawn_egg 1
+    - grass_block 16
+    - creeper_spawn_egg 1
+    - book 1 lore:Transmute_Armor
+    - loom 1
+    - oak_sign 3
+    - chest 2
+    - apple 5
+    - swiftness2potion 1
+    - skeleton_horse_spawn_egg 1
+    - leather_helmet 1 color:16383998
+    - bread 64
+    - cave_spider_spawn_egg 1
+    - wolf_spawn_egg 1
+    - polar_bear_spawn_egg 1
+    - arrow 64
+    - arrow 64
+    - arrow 64
+    - arrow 64
+    - arrow 64
+    - torch 64
+    - stone_pickaxe 1
+    - bone 10
+    - spruce_sapling 2
+    - brown_mushroom_block 64
+    - brown_mushroom_block 64
+    - torch 16
+    - diamond_boots 1 protection_environmental:2
+    - diamond_leggings 1 protection_environmental:2
+    - diamond_chestplate 1 protection_environmental:1
+    - diamond_helmet 1 protection_environmental:1
   Blacksmith:
     delay: 99999
     items:
@@ -59,11 +94,11 @@ kits:
     - salmon 8
     - anvil 1
   blacksmith:
-    delay: 99999
+    delay: 1
     items:
+    - written_book 1 title:Blacksmith author:30Spence
     - nether_bricks 64
-    - chest 3
-    - oak_sign 3
+    - leather_helmet 1 color:11810688
     - gold_ore 24
     - redstone_ore 8
     - iron_pickaxe 1
@@ -73,27 +108,30 @@ kits:
     - anvil 1
     - lever 1
     - piston 1
+    - crafting_table 1
+    - chest 3
+    - oak_sign 3
   tailor:
-    delay: 669
+    delay: 1
     items:
     - stone_pickaxe 1
+    - leather_helmet 1 color:16383998
     - bone 10
-    - oak_sapling 6
+    - spruce_sapling 2
     - brown_mushroom_block 64
     - brown_mushroom_block 64
     - grass_block 16
     - torch 16
-    - loom 1
     - book 1 lore:Transmute_Armor
+    - loom 1
     - oak_sign 3
     - chest 2
     - apple 5
-    - diamond 8
   alchemist:
     delay: 1
     items:
     - stone_pickaxe 1
-    - glass 64
+    - leather_helmet 1 color:3949738
     - brewing_stand 2
     - cauldron 2
     - crafting_table 1
@@ -101,25 +139,29 @@ kits:
     - oak_sign 3
     - lapis_block 64
     - book 1 lore:Transmute_Potions
-    - redstone 5
-    - golden_carrot 3
+    - redstone 9
+    - golden_apple 3
+    - glass 16
   lumberjack:
     delay: 1
     items:
-    - book 1 lore:Extract_Oil
     - iron_axe 1
+    - leather_helmet 1 color:6192150
     - cooked_porkchop 5
+    - bone_meal 16
     - chest 2
+    - blue_terracotta 2 name:Oil lore:"This_Oil_is_used_to_dip_sticks_and_bowls_into,_Jimmy"|_-Some_Quoteable_Dwarf
+    - oak_sapling 6
+    - stick 16
+    - bowl 16
+    - stone_pickaxe 1
     - oak_sign 3
-    - leather_boots 1 color:10511680
-    - leather_leggings 1 color:10511680
-    - leather_chestplate 1 color:10511680
-    - leather_helmet 1 color:10511680
+    - book 1 lore:Extract_Oil
   baker:
-    delay: 99999
+    delay: 1
     items:
     - stone_pickaxe 1
-    - furnace 2
+    - leather_helmet 1 color:10365733
     - clay 8
     - coal 8
     - chest 2
@@ -128,6 +170,9 @@ kits:
     - bone_meal 64
     - book 1 lore:Transmute_Clay
     - bricks 64
+    - iron_hoe 1
+    - furnace 2
+    - ice 2
   LW:
     delay: 1
     items:
@@ -136,10 +181,102 @@ kits:
   zombie:
     delay: 1
     items:
-    - iron_sword 1
+    - iron_sword 1 damage_all:3
     - cooked_beef 5
     - healingpotion 2
     - iron_helmet 1
     - iron_chestplate 1
     - iron_leggings 1
     - iron_boots 1
+    - strengthpotion 1
+  skeleton:
+    delay: 1
+    items:
+    - bow 1 arrow_damage:4 arrow_infinite:1 arrow_fire:1 arrow_knockback:2
+    - arrow 1
+    - vine 10
+    - cooked_beef 5
+    - leather_helmet 1 protection_projectile:1 color:10511680
+    - leather_chestplate 1 protection_projectile:1 color:10511680
+    - leather_leggings 1 protection_projectile:1 color:10511680
+    - leather_boots 1 protection_projectile:1 color:10511680
+  creeper:
+    delay: 1
+    items:
+    - gunpowder 1 name:Kaboom
+    - cooked_beef 2
+    - chainmail_helmet 1
+    - chainmail_chestplate 1
+    - chainmail_leggings 1
+    - chainmail_boots 1
+  lw:
+    delay: 1
+    items:
+    - enchanted_book 1 durability:2 damage_all:4 arrow_damage:3 mending:1 arrow_infinite:1
+      sweeping_edge:1 arrow_knockback:2 fire_aspect:1 arrow_fire:1
+  gnun:
+    delay: 1
+    items:
+    - diamond_hoe 1 name:&5Laser_Gnun lore:emerald
+  dwarf:
+    delay: 1
+    items:
+    - healingiipotion 1
+    - diamond_sword 1 lore:_|&7When_in_main_hand:|_&22_Attack_Speed|_&28_Attack_Damage
+      damage_all:2
+    - bow 1 arrow_damage:2
+    - bread 64
+    - diamond_helmet 1 protection_environmental:2
+    - diamond_chestplate 1 protection_environmental:2
+    - diamond_leggings 1 protection_environmental:1
+    - diamond_boots 1 protection_environmental:1
+    - torch 64
+    - arrow 64
+    - arrow 64
+    - arrow 64
+    - arrow 64
+    - arrow 64
+    - cake 4
+    - gray_dye 64 name:Mortar
+    - strengthiipotion 1
+    - swiftness2potion 1
+    - cobblestone 64
+    - cobblestone 64
+    - cobblestone 64
+    - cobblestone 64
+    - cobblestone 64
+    - cobblestone 64
+    - cobblestone 64
+    - cobblestone 64
+    - cobblestone 64
+  eye:
+    delay: 1
+    items:
+    - ender_eye 1 name:&5Portal_Maker
+  builder:
+    delay: 1
+    items:
+    - stone_pickaxe 1
+    - iron_shovel 1
+    - iron_axe 1
+    - book 1 lore:Transmute_Stone_Bricks
+    - cooked_porkchop 5
+    - chest 2
+    - blue_terracotta 2 name:Oil lore:"This_Oil_is_used_to_dip_sticks_and_bowls_into,_Jimmy"|_-Some_Quoteable_Dwarf
+    - oak_sapling 6
+    - leather_helmet 1 color:10511680
+    - leather_chestplate 1 color:10511680
+    - leather_leggings 1 color:10511680
+    - leather_boots 1 color:10511680
+  waterhero:
+    delay: 0
+    items:
+    - trident 1 name:&6Fuscina loyalty:3
+    - bow 1 name:&6Arcus arrow_damage:3 arrow_infinite:1
+    - diamond_hoe 1 name:&6Gnun lore:emerald
+    - regenerationiipotion 1 name:&bSanitatem
+    - arrow 64
+    - leather_boots 1 protection_environmental:3 color:16383998
+    - leather_leggings 1 protection_environmental:3 color:16383998
+    - leather_chestplate 1 protection_environmental:3 color:16383998
+    - leather_helmet 1 protection_environmental:3 color:16383998

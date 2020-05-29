@@ -2,6 +2,7 @@ IMPORT java.lang.String
 IMPORT java.lang.Integer
 IF args.length < 3
  #MESSAGE "usage: /lrarity (mob) (rarity) (count)"
+ #STOP
 ENDIF
 mob = args[0].toUpperCase()
 {"rarity.chance."+mob} = Integer.parseInt(args[1])

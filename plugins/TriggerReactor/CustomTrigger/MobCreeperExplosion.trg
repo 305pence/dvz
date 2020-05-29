@@ -2,7 +2,18 @@
 IMPORT org.bukkit.Particle
 IMPORT org.bukkit.Material
 IMPORT org.bukkit.block.BlockFace
-IF $haspermission:"creeper" && $helditemname == "GUNPOWDER"
+IF $haspermission:"creeper"
+	fuse = 0.3
+	radius = 3
+	power = 4.0
+ELSEIF $haspermission:"super_creeper"
+	fuse = 0.5
+	radius = 5
+	power = 8.0
+ELSE
+	#STOP
+ENDIF
+IF $helditemname == "GUNPOWDER"
  #COOLDOWN 4
  #SOUNDALL player.getLocation(), "ENTITY_TNT_PRIMED", 3, 1
  pu = 2
@@ -10,7 +21,7 @@ IF $haspermission:"creeper" && $helditemname == "GUNPOWDER"
  WHILE pu > 0
   #SETXP (2 - pu) / 2
   pu = pu - 0.4
-  #WAIT 0.3
+  #WAIT fuse
   SYNC
   IF health > $health
    #SETXP 0
@@ -21,15 +32,15 @@ IF $haspermission:"creeper" && $helditemname == "GUNPOWDER"
  ENDWHILE
  SYNC
   #SETHEALTH 1
-  #EXPLOSION $worldname, $x, $y, $z, 4.0
+  #EXPLOSION $worldname, $x, $y + 1, $z, power
   p = player.getLocation()
   pX = p.getBlockX()
-  pY = p.getBlockY()
+  pY = p.getBlockY() + 1
   pZ = p.getBlockZ()
   world = $world
-  FOR x = -3:4
-   FOR y = -2:5
-    FOR z = -3:4
+  FOR x = -1 * radius:radius + 1
+   FOR y = -1 * radius:radius + 1
+    FOR z = -1 * radius:radius + 1
      block = world.getBlockAt(pX + x, pY + y, pZ + z)
      u = block.getType().name()
      data = block.getBlockData()

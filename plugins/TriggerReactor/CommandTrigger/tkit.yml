@@ -1,4 +1,5 @@
 sync: false
 permissions:
 - moderator
-aliases: []
+aliases:
+- mobkit

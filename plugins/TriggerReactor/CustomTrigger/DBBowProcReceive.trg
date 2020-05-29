@@ -1,4 +1,7 @@
 IMPORT org.bukkit.Particle
+IF entity.getLastDamageCause() == null
+	#STOP
+ENDIF
 cause = entity.getLastDamageCause().getCause().name()
 IF cause == "PROJECTILE"
  player = entity.getKiller()

@@ -1,0 +1,20 @@
+lastAccountName: StephenMiner
+timestamps:
+  login: 1589339196568
+  logout: 1589340870957
+  lastteleport: 1587954289614
+ipAddress: 69.181.56.44
+lastlocation:
+  world: world_the_end
+  x: -13.93480517592076
+  y: -136.57741220327614
+  z: 17.74270789367029
+  yaw: 178.25507
+  pitch: -89.10001
+logoutlocation:
+  world: world
+  x: 419.140002847919
+  y: 83.0
+  z: 363.1979877361663
+  yaw: 90.48127
+  pitch: 5.7959924

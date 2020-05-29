@@ -12,7 +12,7 @@ IF cause == "ENTITY_ATTACK"
  item = $helditem
  IF $helditemhasenchant:"SWEEPING_EDGE":5
   IF $helditemname == "STONE_SWORD" && entity IS LivingEntity
-   event.getEntity().addPotionEffect(makePotionEffect("WITHER", 100, 3, false, false, null), true)
+   event.getEntity().addPotionEffect(makePotionEffect("WITHER", 100, 1, false, false, null), true)
   ENDIF
   team = $getteam:player
   score = Bukkit.getScoreboardManager().getMainScoreboard()
@@ -24,13 +24,13 @@ IF cause == "ENTITY_ATTACK"
     name = nearby.getUniqueId().toString()
    ENDIF
    IF score.getEntryTeam(name) != team && nearby IS LivingEntity && damage > 0 && event.getDamager() != nearby
-    nearby.damage(damage * 0.5)
+    nearby.damage(damage * 0.3)
     RLoc = nearby.getLocation().subtract(locE)
     vec = RLoc.toVector().multiply(-0.12)
     vec.setY(vec.getY() + 0.45)
     nearby.setVelocity(vec)
     IF $helditemname == "STONE_SWORD"
-     nearby.addPotionEffect(makePotionEffect("WITHER", 100, 3, false, false, null), true)
+     nearby.addPotionEffect(makePotionEffect("WITHER", 100, 1, false, false, null), true)
     ENDIF
    ENDIF
   ENDFOR

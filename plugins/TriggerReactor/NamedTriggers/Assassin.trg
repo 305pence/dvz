@@ -49,7 +49,9 @@ ASYNC
         ENDIF
       ENDFOR
       IF {"MobRelease"} == false
+	   #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Doom Clock" 999
        {"MobRelease"} = true
+	   #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Kills" 0
        #BROADCAST "&5#========================#"
        #BROADCAST "&5The Mobs Have Been Released"
        #BROADCAST "&5#========================#"
@@ -58,27 +60,28 @@ ASYNC
     ENDIF
     IF i == 23
      pu = 0
-     FOR player = getPlayers()
-      IF $haspermission:"dwarf" && !($haspermission:"hero" || $haspermission:"plague" || $haspermission:"assassin")
-       dwarves[pu] = player
-       pu = pu + 1
-      ENDIF
-     ENDFOR
-     fails = 0
-     WHILE p/count >= 2/3.0
-      u = $random:0:pu
-      player = dwarves[pu]
-      IF $haspermission:"dwarf" && !($haspermission:"hero" || $haspermission:"plague" || $haspermission:"assassin")
-       #CMDCON "lp user $playername parent add assassin"
-       #MESSAGE "&cA dark force invades your mind"
-       #KILL
-      ELSE
-       fails = fails + 1
-       IF fails == 100
-        #BROADCAST "&cFailed to find dwarves to kill in 100 tries to satisfy the ratio. i am not so good at my job am i..."
-        #BREAK
+	 SYNC
+      FOR player = getPlayers()
+       IF $haspermission:"dwarf" && !($haspermission:"hero" || $haspermission:"plague" || $haspermission:"assassin")
+        dwarves[pu] = player
+        pu = pu + 1
        ENDIF
-      ENDIF
+      ENDFOR
+      fails = 0
+      WHILE p/count >= 2/3.0
+       u = $random:0:pu
+       player = dwarves[pu]
+       IF $haspermission:"dwarf" && !($haspermission:"hero" || $haspermission:"plague" || $haspermission:"assassin")
+        #CMDCON "lp user $playername parent add assassin"
+        #MESSAGE "&cA dark force invades your mind"
+        #KILL
+       ELSE
+        fails = fails + 1
+        IF fails == 100
+         #BROADCAST "&cFailed to find dwarves to kill in 100 tries to satisfy the ratio. i am not so good at my job am i..."
+         #BREAK
+        ENDIF
+       ENDIF
 //reminder to remove this part later
       p = 0
       FOR player = getPlayers()
@@ -87,7 +90,8 @@ ASYNC
        ENDIF
       ENDFOR
 //seems unnessesary
-     ENDWHILE
+      ENDWHILE
+	 ENDSYNC
     ENDIF
   ENDFOR
   FOR player = getPlayers()
@@ -98,6 +102,8 @@ ASYNC
   ENDFOR
   IF {"MobRelease"} == false
    {"MobRelease"} = true
+   #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Doom Clock" 999
+   #SCOREBOARD "OBJ" "DvZ:dummy" "SET" "Kills" 0
    #BROADCAST "&5#========================#"
    #BROADCAST "&5The Mobs Have Been Released"
    #BROADCAST "&5#========================#"

@@ -1,0 +1,20 @@
+lastAccountName: gerzytet
+timestamps:
+  login: 1589339149646
+  lastteleport: 1582928889932
+  logout: 1589342303909
+ipAddress: 71.214.80.221
+lastlocation:
+  world: world
+  x: 1158.363100985274
+  y: 45.41999998688698
+  z: 7351.531715732331
+  yaw: 288.33563
+  pitch: -2.2910416
+logoutlocation:
+  world: world_the_end
+  x: -4.812795561471412
+  y: 65.0
+  z: 0.5921442991953684
+  yaw: 142.75421
+  pitch: 18.174223

@@ -1,13 +1,20 @@
-lastAccountName: SHSLTrapdoor
+lastAccountName: PointlessUpdates
 timestamps:
-  login: 1578191899545
-  logout: 1578193572818
-ipAddress: 75.191.212.100
+  login: 1581715916909
+  logout: 1581720015670
+ipAddress: 24.163.122.133
 afk: false
 logoutlocation:
   world: world
-  x: -978.2608189440685
-  y: 185.10314541665394
-  z: -454.62912269830855
-  yaw: 87.71106
-  pitch: 30.299955
+  x: -1209.68114452847
+  y: 122.0
+  z: -437.76171548022364
+  yaw: -82.801094
+  pitch: -3.6000538
+lastlocation:
+  world: world
+  x: -1210.0908908963972
+  y: 122.0
+  z: -439.0760616457608
+  yaw: -7.254944
+  pitch: 25.049837

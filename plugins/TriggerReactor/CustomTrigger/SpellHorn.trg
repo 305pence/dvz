@@ -12,7 +12,7 @@ IF event.getItem().getType().name() == "NAUTILUS_SHELL"
    FOR player = getPlayers()
     IF $haspermission: "dwarf"
      #CLEARPOTION "LUCK"
-     #POTION "LUCK", 60, 1
+     #POTION "LUCK", 160, 1
      #SOUND player.getLocation(), "ENTITY_WITHER_HURT", 0.7, 0.5
      world = $world
      world.spawnParticle(Particle.VILLAGER_HAPPY, player.getLocation().getX(), (player.getLocation().getY() + 1), player.getLocation().getZ(), 20, 0.5, 0.5, 0.5)

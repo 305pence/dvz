@@ -10,7 +10,8 @@ IF event.getClickedBlock().getBlockData().getMaterial().name() == "PISTON_HEAD"
  tableX = event.getClickedBlock().getX()
  tableY = event.getClickedBlock().getY() + 1
  tableZ = event.getClickedBlock().getZ()
- IF $blockname:"world":tableX:tableY:tableZ == "air"
+ worldname = $worldname
+ IF $blockname:worldname:tableX:tableY:tableZ == "air"
   IF takeItem(player, "CLOCK", 3)
    #COOLDOWN 1
    #SETBLOCK "YELLOW_CONCRETE_POWDER", tableX, tableY, tableZ

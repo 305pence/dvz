@@ -21,5 +21,8 @@ IF c == "witherwarrior"
 ELSEIF c == "dragonborn"
  #DragonBornKit player
 ELSE
+  IF c == "lumberjack"
+	c = "builder"
+  ENDIF
   #CMDCON "kit " + c +" $playername"
 ENDIF

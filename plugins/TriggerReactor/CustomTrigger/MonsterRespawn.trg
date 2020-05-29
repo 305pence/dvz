@@ -20,7 +20,11 @@ IF $haspermission:"dead"
     #CONTINUE
    ENDIF
    IF {"lives." + mob} > 0
-    #GIVE item(mob + "_SPAWN_EGG", 1)
+    IF mob == "IRON_GOLEM"
+		#GIVE item("IRON_PICKAXE", 1)
+	ELSE
+		#GIVE item(mob + "_SPAWN_EGG", 1)
+	ENDIF
    ENDIF
   ENDIF
  ENDFOR

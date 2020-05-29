@@ -18,6 +18,7 @@ IF $random:5 == 3
  #SETITEMNAME "&3&lAlchemist", i
  #GIVE i
 ENDIF
-i = item("MUSIC_DISC_WARD", 1)
-#SETITEMNAME "&2&lLumberjack", i
-#GIVE i
+ i = item("MUSIC_DISC_13", 1)
+ #SETITEMNAME "&e&lBuilder", i
+ #GIVE i
+ #MESSAGE "&3Left click a disc to select a class"

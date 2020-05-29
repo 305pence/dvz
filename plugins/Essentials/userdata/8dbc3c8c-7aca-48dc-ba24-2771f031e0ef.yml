@@ -1,11 +1,11 @@
 lastAccountName: FurretWalc
 timestamps:
-  login: 1577926526342
+  login: 1580011691659
   lastteleport: 1577927658402
   kits:
     blacksmith: 1577927659487
     tailor: 1577927638539
-  logout: 1577927913825
+  logout: 1580012185827
 ipAddress: 108.223.63.109
 lastlocation:
   world: world
@@ -16,8 +16,8 @@ lastlocation:
   pitch: 32.636894
 logoutlocation:
   world: world
-  x: -667.3158291176472
-  y: 170.0
-  z: -709.2375000119209
-  yaw: -193.4391
-  pitch: -11.699999
+  x: -612.9906130929883
+  y: 61.8760529638629
+  z: -855.0675845084842
+  yaw: 86.31552
+  pitch: -56.099983

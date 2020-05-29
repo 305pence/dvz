@@ -1,3 +1,4 @@
 sync: false
 permissions: []
-aliases: []
+aliases:
+- rarity

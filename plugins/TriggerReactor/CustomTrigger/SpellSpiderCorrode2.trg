@@ -1,6 +1,6 @@
 IMPORT org.bukkit.Material
 IMPORT org.bukkit.block.BlockFace
-IF event.getEntity().getType().name() == "ENDER_PEARL"
+IF event.getEntity().getType().name() == "ENDER_PEARL" && event.getEntity().getTicksLived() <= 10
   player = event.getEntity()
   p = player.getLocation()
   pX = p.getBlockX()
@@ -30,7 +30,9 @@ IF event.getEntity().getType().name() == "ENDER_PEARL"
      ELSEIF u == "COBBLESTONE"
        material = Material.MOSSY_COBBLESTONE
      ELSEIF u == "GRAVEL" || u == "MOSSY_STONE_BRICK_SLAB" || u == "MOSSY_STONE_BRICK_STAIRS" || u == "MOSSY_STONE_BRICK_WALL" || u == "MOSSY_STONE_BRICKS"|| u == "MOSSY_COBBLESTONE"|| block.getType().isFlammable() || u == "BRICKS" || u == "LAPIS_BLOCK" || u == "NETHER_BRICKS"
-      block.setType(Material.AIR)
+      IF $random:1:11 == 1
+		block.setType(Material.SLIME_BLOCK)
+	  ENDIF
       #CONTINUE
      ELSEIF u == "SMOOTH_STONE_SLAB" || u == "STONE_BRICK_SLAB"
       material = Material.MOSSY_STONE_BRICK_SLAB
@@ -41,7 +43,7 @@ IF event.getEntity().getType().name() == "ENDER_PEARL"
       face = data.getFacing()
       half = data.getHalf()
       shape = data.getShape()
-      material = Material.MOSSY_STONE_BRICK
+      material = Material.MOSSY_STONE_BRICK_STAIRS
      ELSEIF u == "STONE_BRICK_WALL"
       water = data.isWaterlogged()
       material = Material.MOSSY_STONE_BRICK_SLAB_WALL  

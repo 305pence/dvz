@@ -5,7 +5,7 @@ IMPORT org.bukkit.Particle
 item = event.getItem()
 IF $idname:item == "NETHER_STAR" && item.getItemMeta().hasDisplayName()
  IF item.getItemMeta().getDisplayName() == "§6Nether Star"
-  mana = 30 + ({"scoreboard.dwarves"}/3 + 1) * 4
+  mana = 25 + ({"scoreboard.dwarves"}/3 + 1) * 4
   IF mana > 90
    mana = 90
   ENDIF
@@ -21,7 +21,7 @@ IF $idname:item == "NETHER_STAR" && item.getItemMeta().hasDisplayName()
    FOR player = player.getNearbyEntities(5, 2, 5)
     IF $getteam:player == team
      world = $world
-     #POTION "REGENERATION", 60, 4
+     #POTION "REGENERATION", 120, 2
      #POTION "ABSORPTION", 100000, 1
      loc = player.getLocation()
      loc.add(0, 0.5, 0)

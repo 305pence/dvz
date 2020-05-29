@@ -8,10 +8,14 @@ FOR player = getPlayers()
     level = 100
    ENDIF
   ELSEIF $haspermission:"monster"
-   IF $explevel < 98
-    level = $explevel + 3
+   IF $haspermission:"enderman" && {"portal.state"}
+    level = $explevel
    ELSE
-    level = 100
+    IF $explevel < 98
+     level = $explevel + 3
+    ELSE
+     level = 100
+    ENDIF
    ENDIF
   ELSEIF $haspermission:"witherwarrior"
    mana = 1 + ({"scoreboard.dwarves"}/3)
